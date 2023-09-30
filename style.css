@@ -1,0 +1,171 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body,html{
+   height: 100%;
+   width: 100%;
+}
+#nav{
+   height: 4vh;
+   width: 100%;
+   
+   position:fixed;
+   z-index: 99;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 30px;
+   padding-right: 30px;
+}
+#nav h3{
+   font-size: 2.7vh;
+   font-weight: 100;
+}
+#nav button{
+   padding: 8px 10px;
+   border-radius: 20px;
+   font-size: 2.7vh;
+   border: none;
+   margin-right: 45px;
+   margin-top: 20px;
+   background-color: #000;
+   color: #fff;
+}
+#main{
+   position:relative;
+   overflow: hidden;
+}
+
+#page{
+   height: 100vh;
+   width: 100vw;
+   position: relative;
+}
+canvas{
+   position: relative;
+   max-width: 100vw;
+   max-height: 100vh;
+   z-index: 9;
+   
+}
+ #loop{
+   position: absolute;
+   top: 20%;
+   width: 100%;
+   font-size: 100px;
+   white-space: nowrap;
+   display: flex;
+}
+#loop h1{
+   font-weight: 400;
+   animation-name: anim;
+   animation-duration: 30s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   
+}
+#loop>h1>span{
+   -webkit-text-stroke: 1px #000;
+   color: transparent;
+  
+}
+@keyframes anim{
+   0%{
+      transform:translateX(0%) ;
+   }
+   100%{
+      transform: translateX(-100%);
+   }
+}
+#page h3{
+   position: absolute;
+   top: 60%;
+   left: 12%;
+   font-size: 2vh;
+   font-weight: 100;
+   width: 35%;
+}
+#sec2{
+   position: absolute;
+   top: 60%;
+   right: 12%;
+   font-size: 2vh;
+   font-weight: 100;
+   width: 35%;
+   text-align: end;
+}
+#page1{
+   height: 100vh;
+   width: 100vw;
+   position: relative;
+}
+#page1 #left{
+   position: absolute;
+   left: 10%;
+   top: 35%;
+}
+#left h3{
+   font-size: 1.4vh;
+   padding-bottom: 10px;
+}
+#page1 #right{
+   position: absolute;
+   right: 10%;
+   bottom: 35%;
+   text-align: end;
+}
+#right h1{
+   text-align: end;
+   font-size: 4vh;
+   font-weight: 900;
+}
+#right h3{
+   font-size: 1.4vh;
+   padding-top: 10px;
+}
+#page2{
+   height: 100vh;
+   width: 100vw;
+  
+}
+#page2 #pg2-left{
+   position: absolute;
+   left: 10%;
+   top: 35%;
+}
+#pg2-left h1{
+ font-size: 6vh;
+}
+ #page2 #pg2-right{
+   position: absolute;
+   right: 4%;
+   bottom: 25%;
+   width: 32%;
+}
+#pg2-right p{
+   padding-bottom: 20px;
+   font-size: 2vh;
+   text-align: end;
+}
+#page3{
+   height: 100vh;
+   width: 100vw;
+   position: relative;
+}
+ #page3 #pg3-left{
+position: absolute;
+top: 25%;
+left: 6%;
+}
+#pg3-left p{
+   width: 33%;
+   font-size: 2vh;
+   text-align: end;
+}
+ #page3 #pg3-right{
+position: absolute;
+bottom: 25%;
+right: 12%;
+}
